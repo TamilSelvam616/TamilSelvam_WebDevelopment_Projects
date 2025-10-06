@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Takshashila University Campus Network Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Takshashila University Campus Network Survey Form</h2>
+
+        <form action="/submit" method="post">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="course">Course</label>
+            <input type="text" id="course" name="course">
+
+            <label>How often do you use campus Wi-Fi?</label>
+            <div class="radio-group">
+                <input type="radio" id="daily" name="wifi_usage" value="Daily">
+                <label for="daily">Daily</label><br>
+                <input type="radio" id="weekly" name="wifi_usage" value="Weekly">
+                <label for="weekly">Weekly Basis</label><br>
+                <input type="radio" id="occasional" name="wifi_usage" value="Occasionally">
+                <label for="occasional">Occasionally</label><br>
+                <input type="radio" id="rarely" name="wifi_usage" value="Rarely">
+                <label for="rarely">Rarely</label>
+            </div>
+
+            <label>How would you rate the overall network performance?</label>
+            <div class="radio-group">
+                <input type="radio" id="excellent" name="performance" value="Excellent">
+                <label for="excellent">Excellent</label><br>
+                <input type="radio" id="good" name="performance" value="Good">
+                <label for="good">Good</label><br>
+                <input type="radio" id="average" name="performance" value="Average">
+                <label for="average">Average</label><br>
+                <input type="radio" id="poor" name="performance" value="Poor">
+                <label for="poor">Poor</label>
+            </div>
+
+            <label for="feedback">Do you need any improvements?</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Your suggestions..."></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="reset" class="btn-reset">Clear Form</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
